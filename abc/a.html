@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>A</title>
+</head>
+<body>
+<h1>A is for Amethyst</h1>
+
+<h3>This is text to replace with a fruit.</h3>
+
+<h2><a href="/rainbow/">Home</a></h2>
+<p><a href="/rainbow/one.html">One</a></p>
+<p><a href="/rainbow/two.html">Two</a></p>
+<p><a href="/rainbow/three.html">Three</a></p>
+<p><a href="/rainbow/one.html">A is for AMETHYST</a></p>
+<p><a href="/rainbow/two.html">B</a></p>
+<p><a href="/rainbow/three.html">C</a></p>
+</body>
+</html>
+
+<style>
+html {
+  height: 100%;
+  width: 100%;
+}
+body {
+    background: #9966CC; /* Amethyst */
+	color:#ffffff; /* white */
+}
+p {
+	font-size:2rem;
+}
+
+@media only screen and (max-width: 600px) {
+	[style*="--aspect-ratio"] > :first-child {
+	  width: 100%;
+	}
+	[style*="--aspect-ratio"] > img {  
+	  height: auto;
+	} 
+	@supports (--custom:property) {
+	  [style*="--aspect-ratio"] {
+		position: relative;
+	  }
+	  [style*="--aspect-ratio"]::before {
+		content: "";
+		display: block;
+		padding-bottom: calc(100% / (var(--aspect-ratio)));
+	  }  
+	  [style*="--aspect-ratio"] > :first-child {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+	  }  
+	}
+}
+</style>
