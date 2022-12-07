@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Keep it 💯</title>
+</head>
+<body>
+
+<h1>Here is a word to replace: <strong>muffin</strong>.</h1>
+
+<table style="border: 1px solid white;color:#ffffff;">
+<tr>
+<td><a href="/rainbow/100/z0.html">y0</a></td>
+</tr>
+<tr>
+<td><a href="/rainbow/100/z0.html">y1</a></td>
+<td><a href="/rainbow/100/z1.html">y2</a></td>
+<td><a href="/rainbow/100/z2.html">y3</a></td>
+</tr>
+<tr>
+<td><a href="/rainbow/100/z3.html">y4</a></td>
+<td><a href="/rainbow/100/z0.html">y5</a></td>
+<td><a href="/rainbow/100/z0.html">y6</a></td>
+</tr>
+<tr>
+<td><a href="/rainbow/100/z0.html">y7</a></td>
+<td><a href="/rainbow/100/z0.html">y8</a></td>
+<td><strong><a href="/rainbow/100/z0.html">y9</a></strong></td>
+</tr>
+</table>
+
+<h2><a href="/rainbow/">Home</a></h2>
+<p><a href="/rainbow/one.html">One</a></p>
+<p><a href="/rainbow/two.html">Two</a></p>
+<p><a href="/rainbow/three.html">Three</a></p>
+<p><a href="/rainbow/def/a.html">A</a></p>
+<p><a href="/rainbow/def/b.html">B</a></p>
+<p><a href="/rainbow/def/c.html">C</a></p>
+<p><a href="/rainbow/100/100.html">100</a></p>
+</body>
+</html>
+
+<style>
+html {
+  height: 100%;
+  width: 100%;
+}
+body {
+    background: #ffffff; /* white */
+	color:#000000; /* black */
+}
+a {
+	color:#000000; /* black */
+}
+td {
+	font-size:1.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+	[style*="--aspect-ratio"] > :first-child {
+	  width: 100%;
+	}
+	[style*="--aspect-ratio"] > img {  
+	  height: auto;
+	} 
+	@supports (--custom:property) {
+	  [style*="--aspect-ratio"] {
+		position: relative;
+	  }
+	  [style*="--aspect-ratio"]::before {
+		content: "";
+		display: block;
+		padding-bottom: calc(100% / (var(--aspect-ratio)));
+	  }  
+	  [style*="--aspect-ratio"] > :first-child {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+	  }  
+	}
+}
+</style>
